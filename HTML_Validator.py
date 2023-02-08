@@ -45,7 +45,7 @@ def validate_html(html):
 
 
 def _extract_tags(html):
-    tags = re.findall('<[\/0-9a-z]+>', html)
+    tags = re.findall(r'<[\/0-9a-z]+>', html)
     return tags
 
     '''
